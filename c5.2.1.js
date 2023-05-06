@@ -1,4 +1,5 @@
-// Преобразовать XML в JS-объект и вывести рез-т в консоль
+// Преобразовать XML в JS-объект 
+//и вывести рез - т в консоль
 
 const xmlString = `
 <list>   
@@ -54,7 +55,7 @@ students.forEach(function (item) {
     });
 }); 
 // вывод в консоль объекта
-console.log(list)
+//console.log(list)
 console.log(`list: {name:${list[0].name}, age:${list[0].age}, prof:${list[0].prof}, lang:${list[0].lang}}`);
 console.log(`list: {name:${list[1].name}, age:${list[1].age}, prof:${list[1].prof}, lang:${list[1].lang}}`);
 

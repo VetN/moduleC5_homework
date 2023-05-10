@@ -10,22 +10,22 @@
     (адрес по которому осущ запрос и вызов callback функции, если запрос удачен) */
 
 function useRequest(url, callback) {
-    let xhr = new XMLHttpRequest();
-    xhr.open('GET', url, true); 
-    xhr.onload = function() {  
+    let xhr = new XMLHttpRequest();  // xhr- это запрос
+    xhr.open('GET', url, true);      // на запрос вешаем обработчики
+    xhr.onload = function() {     // обработчик onload срабат когда получаем рез-т от сервера
         if (xhr.status != 200) {
             console.log('Статус ответа: ', xhr.status);
         } else {
-            const result = JSON.parse(xhr.response);
+            const result = JSON.parse(xhr.response); // response - возвращ удачный запрос и распарсиваем его и превр js объект
         if (callback) {
             callback(result);
         }
         }
     };
-    xhr.onerror = function() {
+    xhr.onerror = function() { // обрабатывает ошибки
         console.log('Ошибка! Статус ответа: ', xhr.status);
     };
-    xhr.send();
+    xhr.send(); // вызывается и осуществ запрос, после того, как повесили все обработчики
 };
 
 
@@ -58,11 +58,12 @@ function checkNum () {
   const numInput = document.getElementById("numcard");
   const numValue = numInput.value;
   //console.log("2", numValue);
-  if (numValue > 0 && numValue <= 10) {
-   useRequest(`https://picsum.photos/v2/list/?limit=${numValue}`, displayResult);
-} else {
-    alert("число вне диапазона")
-  }
+    if (numValue > 0 && numValue <= 10) {
+        useRequest(`https://picsum.photos/v2/list/?limit=${numValue}`, displayResult);
+    } else {
+        alert("число вне диапазона")
+    }
+    numInput.value = ''; // очистка поля
 };
 
 button.onclick = checkNum;

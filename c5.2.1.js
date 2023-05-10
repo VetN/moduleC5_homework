@@ -21,7 +21,6 @@ const xmlString = `
     </student>
 </list>
 `;
-
 const list = [];
 
 // создание экземпляра класса DOMParser

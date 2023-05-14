@@ -14,7 +14,7 @@
     line-height: 15px;
     text-transform: uppercase;
     color: white;
-    background: #510d4f;
+    background: #4d1c4d;
     transition: 0.3s;
   }
   
@@ -32,8 +32,16 @@
     width: 200px;
     height: 150px;
   }
-  .text {
+  .but {
     border-radius: 10px;
+    height: 30px;
+    width: 90px;
+    border: 1px;
+    color: rgb(3, 3, 3);
+    background: #b5b1b4;
   }
  
-  
+  ::placeholder {
+    color: #000;
+    padding: 8px;
+  }

@@ -35,5 +35,5 @@ for (let i = 0; i <= res.length-1; i++) {
 
     
 //console.log(resAll);
-console.log(`list: [ { name: ${resAll[0].name}, age: ${resAll[0].age}, prof:${resAll[0].prof}},`)
-console.log(`{name:${resAll[1].name}, age: ${resAll[1].age}, prof:${resAll[1].prof}},] `)
+console.log(`list: [ { name: ${resAll[0].name}, age: ${resAll[0].age}, prof:${resAll[0].prof}},
+{name:${resAll[1].name}, age: ${resAll[1].age}, prof:${resAll[1].prof}},] `)

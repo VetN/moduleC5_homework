@@ -28,5 +28,5 @@ listPersons.forEach(function (item) {
 });
     
 //console.log(resultAll);
-console.log(`list: [ { name:${resultAll[0].name}, age:${resultAll[0].age}, prof:${resultAll[0].prof}},`);
-console.log(`{ name:${resultAll[1].name}, age:${resultAll[1].age}, prof:${resultAll[1].prof}},]`);
+console.log(`list: [ { name:${resultAll[0].name}, age:${resultAll[0].age}, prof:${resultAll[0].prof}},
+{ name:${resultAll[1].name}, age:${resultAll[1].age}, prof:${resultAll[1].prof}},]`);

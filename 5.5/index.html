@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My photo</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="alllist">
+    <h1>ВЫВОД ФОТОГРАФИЙ <br> ПО ЗАПРОСУ </h1>
+
+    <p>
+      Вывод данных осуществляется в поле ввода. <br>
+      Вводим номер страницы и количество фото.<br>
+      Запрос идет на сторонний ресурс и оттуда, <br>
+      в специальное поле image, приходит <br>
+      запрошенное количество фото с нужной страницы.<br>
+      После обновления страницы должны <br>
+      быть выведены фото последнего запроса
+    </p>
+    <form class="field">
+        <label> номер страницы <br><input type="text" class="but" id="page" placeholder = "от 1 до 10 "></label><br>
+        <label>количество фото<br><input type="text" class="but" id="limit"  placeholder = " от 1 до 10 "></label><br>
+        <input type="button" class="btn" value ="Введите данные">
+        <div class="image" size = 200></div> 
+      </form>
+ 
+    <script src="script.js"> 
+    </script>  
+</body>
+</html>

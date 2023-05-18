@@ -9,8 +9,7 @@
 const button = document.querySelector('.btn');
 const fieldCard = document.querySelector('.image');
     
-               
-function checkNum () {
+button.addEventListener('click', () => {               
   const sizeInput_1 = document.getElementById("size_1");
   const sizeInput_2 = document.getElementById("size_2");
   const size_1 = sizeInput_1.value;
@@ -36,6 +35,4 @@ function checkNum () {
   }
     sizeInput_1.value = '';
     sizeInput_2.value = '';// очистка поля
-    };
-
-button.onclick = checkNum;    
+    });

@@ -52,6 +52,7 @@ button.addEventListener('click', () => {
         fieldCard.innerHTML = '<p> Ошибка. Повторите запрос еще раз</p>'
       });
     }
+  
   pageInput.value = '';
   limitInput.value = '';// очистка поля
   localStorage.setItem('myKey', cards);
